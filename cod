@@ -1,0 +1,11 @@
+word = input("пиши без пробелов:")
+number = int(input("число кодировки:"))  
+printword = ""
+
+for letter in word:  
+    d = ord(letter) + number
+    if d > 122:
+        d=d-26
+    printword += chr(d) 
+
+print("закод.слово:", printword)
